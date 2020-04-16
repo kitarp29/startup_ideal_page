@@ -9,7 +9,7 @@ body{
 font-family: 'Montserrat', sans-serif;
 font-size: 3rem;
 line-height: 1.5;
-font-weight : bolder;
+font-weight: bold;
 }
 .container-fluid{
   padding: 3% 15%;
@@ -20,13 +20,16 @@ h2{
 font-family: 'Ubuntu', sans-serif;
   color: white;
 }
+
 .nav-link
 {
     color: white;
 }
 .pk{
-  width: 70%;
+  width: 50%;
   transform: rotate(15deg);
+  position: absolute;
+right: 30%;
 }
 .lily{
   height: 10%;
@@ -82,8 +85,12 @@ p{
 }
 
 #features{
+  background-color: #fff;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding: 7% 15%;
+  position: relative;
+
 }
 #testimonials{
   padding: 7% 15%;
@@ -115,7 +122,21 @@ p{
 .pr{
   margin-top: 2rem;
   text-align: center;
+
 }
 #cta{
+  text-align: center;
+}
+@media (max-width: 1028px) {
+.pk{
+  position: static;
+  transform: rotate(0);
+}
+#title{
+  text-align: center;
+}
+
+}
+#footer{
   text-align: center;
 }
